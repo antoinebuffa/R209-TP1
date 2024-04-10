@@ -49,3 +49,26 @@ main{
     gap: 10px; 
   }
 
+.type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.type a {
+  color: white; 
+  text-decoration: none; 
+  margin: 0 10px; 
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.type a:hover {
+  background-color: #00D6A1;
+}
+
+.type a.selected {
+  background-color: #00D6A1; 
+}
+  
