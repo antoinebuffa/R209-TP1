@@ -21,6 +21,7 @@ h2 {
     font-weight: 400;
     font-style: normal;
     color: #ffffff;
+    font-size: 48px;
   }
 
 main h2 span {
@@ -31,4 +32,20 @@ body {
     background-color: #011820;
 }
 
+p {
+    color: #2E3D45;
+}
+
+main{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(6, 1fr); 
+    gap: 10px; 
+  }
 
