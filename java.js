@@ -8,6 +8,10 @@ document.addEventListener("DOMContentLoaded", function() {
         });
         this.classList.add('selected');
       });
+  
+      if (window.location.href === link.href) {
+        link.classList.add('selected');
+      }
     });
   });
   
