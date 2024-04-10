@@ -3,13 +3,10 @@ document.addEventListener("DOMContentLoaded", function() {
   
     links.forEach(function(link) {
       link.addEventListener('click', function(event) {
-        links.forEach(function(l) {
-          l.classList.remove('selected');
-        });
-        this.classList.add('selected');
+        localStorage.setItem('selectedLink', this.id);
       });
   
-      if (window.location.href === link.href) {
+      if (localStorage.getItem('selectedLink') === link.id) {
         link.classList.add('selected');
       }
     });
